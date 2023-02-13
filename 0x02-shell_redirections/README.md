@@ -1,1 +1,1 @@
-input and output redirection
+input and output redirection and filter script
