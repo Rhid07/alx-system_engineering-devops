@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# a for loop to iterate through files in the current directory
+
+for file in *;
+do
+
+# Check that the file is not a hidden file
+
+	if [[ $file != .* ]];
+then
+
+# Extract the part of the name after the first dash
+
+	name_part=$(echo "$file" | cut -d'-' -f2-)
+
+# Display the modified name in a list format
+
+	echo "$name_part"
+fi
+done
